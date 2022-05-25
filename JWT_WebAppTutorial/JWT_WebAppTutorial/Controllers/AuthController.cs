@@ -1,8 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Cryptography;
-using System.Security.Claims;
-using System.Security.Cryptography;
 
 namespace JWT_WebAppTutorial.Controllers
 {
@@ -31,6 +29,10 @@ namespace JWT_WebAppTutorial.Controllers
             {
                 return BadRequest("User not found");
             }
+            if (!VerifyPasswordhash(request.Password, user.PasswordHash, user.PasswordSalt))
+            {
+                return BadRequest("FAllo passwo");
+            }
             return Ok("Okk token");
 
         }
@@ -40,6 +42,15 @@ namespace JWT_WebAppTutorial.Controllers
             {
                 passwordSalt = hmac.Key;
                 passwordHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+            }
+        }
+
+        private bool VerifyPasswordhash(string password, byte[] passwordHash, byte[] passwordSalt)
+        {
+            using (var hmac = new HMACSHA512(passwordSalt))
+            {
+                var computeHash = hmac.ComputeHash(System.Text.Encoding.UTF8.GetBytes(password));
+                return computeHash.SequenceEqual(passwordHash);
             }
         }
     }
