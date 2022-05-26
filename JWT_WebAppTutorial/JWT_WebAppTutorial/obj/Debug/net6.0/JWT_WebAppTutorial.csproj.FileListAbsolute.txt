@@ -25,3 +25,8 @@ C:\Users\Usuario\source\repos\JWT_Api\JWT_WebAppTutorial\JWT_WebAppTutorial\obj\
 C:\Users\Usuario\source\repos\JWT_Api\JWT_WebAppTutorial\JWT_WebAppTutorial\obj\Debug\net6.0\JWT_WebAppTutorial.pdb
 C:\Users\Usuario\source\repos\JWT_Api\JWT_WebAppTutorial\JWT_WebAppTutorial\obj\Debug\net6.0\JWT_WebAppTutorial.genruntimeconfig.cache
 C:\Users\Usuario\source\repos\JWT_Api\JWT_WebAppTutorial\JWT_WebAppTutorial\obj\Debug\net6.0\ref\JWT_WebAppTutorial.dll
+C:\Users\Usuario\source\repos\JWT_Api\JWT_WebAppTutorial\JWT_WebAppTutorial\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\Usuario\source\repos\JWT_Api\JWT_WebAppTutorial\JWT_WebAppTutorial\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\Usuario\source\repos\JWT_Api\JWT_WebAppTutorial\JWT_WebAppTutorial\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\Usuario\source\repos\JWT_Api\JWT_WebAppTutorial\JWT_WebAppTutorial\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\Usuario\source\repos\JWT_Api\JWT_WebAppTutorial\JWT_WebAppTutorial\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
