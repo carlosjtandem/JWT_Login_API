@@ -19,7 +19,7 @@ namespace JWT_WebAppTutorial.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetWeatherForecast"),Authorize]
+        [HttpGet(Name = "GetWeatherForecast"),Authorize(Roles ="Admin")]
         public IEnumerable<WeatherForecast> Get()
         {
             int TemperatureCf = Random.Shared.Next(-20, 55);
