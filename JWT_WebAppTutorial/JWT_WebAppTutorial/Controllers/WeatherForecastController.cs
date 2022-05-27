@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace JWT_WebAppTutorial.Controllers
@@ -18,7 +19,7 @@ namespace JWT_WebAppTutorial.Controllers
             _logger = logger;
         }
 
-        [HttpGet(Name = "GetWeatherForecast")]
+        [HttpGet(Name = "GetWeatherForecast"),Authorize]
         public IEnumerable<WeatherForecast> Get()
         {
             int TemperatureCf = Random.Shared.Next(-20, 55);
